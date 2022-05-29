@@ -17,7 +17,7 @@ body:
   - type: input
     id: Version
     attributes:
-      label: Version
+      label: Version (i.e. v2.x.x)
       placeholder: 2.x.x
     validations:
       required: true
@@ -25,10 +25,10 @@ body:
   - type: input
     id: node-version
     attributes:
-      label: Node.js version
+      label: Node.js version (i.e. 18.x, or N/A)
       placeholder: 14.x
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: os
@@ -38,15 +38,16 @@ body:
         - Linux
         - macOS
         - Windows
+        - N/A
     validations:
-      required: true
+      required: false
 
   - type: input
     id: os-version
     attributes:
-      label: Operating system version (i.e. 20.04, 11.3, 10)
+      label: Operating system version (i.e. 20.04, 11.3, 10, or N/A)
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: description
